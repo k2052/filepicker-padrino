@@ -13,7 +13,7 @@ module Filepicker
         }
 
         type = options[:dragdrop] ? 'filepicker-dragdrop' : 'filepicker'
-        @template.input_tag type, input_options.reverse_merge!(:name => name)
+        @template.input_tag type, input_options.reverse_merge!(:name => field_name(name))
       end
     end
   end
