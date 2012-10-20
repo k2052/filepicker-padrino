@@ -46,11 +46,11 @@ Add the filepicker.io javascript library to your layout:
 
 ### Note the usage of:
 
-    <%= filepicker_form_for @user do |f| %>
+    <%= filepicker_form_for @user, path do |f| %>
 
 ### Instead of the typical:
 
-    <%= form_for @user do |f| %>
+    <%= form_for @user, path do |f| %>
 
 Full options list:
 * button_text - The text of the upload button.

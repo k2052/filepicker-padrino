@@ -3,7 +3,7 @@ module Filepicker
     class FormBuilder < ::Padrino::Helpers::FormBuilder::StandardFormBuilder
       def filepicker_field(method, options = {})
         input_options = {
-          'data-fp-apikey'           => settings.filepicker_api_key,
+          'data-fp-apikey'           => @template.settings.filepicker_padrino_api_key,
           'data-fp-button-text'      => options.fetch(:button_text, "Pick File"),
           'data-fp-button-class'     => options[:button_class],
           'data-fp-mimetypes'        => options[:mimetypes],

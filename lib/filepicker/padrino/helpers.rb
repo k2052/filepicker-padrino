@@ -23,7 +23,7 @@ module Filepicker
         save_as          = options.delete(:save_as_name)
 
         options[:data]['fp-url']                      = url
-        options[:data]['fp-apikey']                   = settings.filepicker_api_key
+        options[:data]['fp-apikey']                   = settings.filepicker_padrino_api_key
         options[:data]['fp-mimetype']                 = mimetype
         options[:data]['fp-option-container']         = container if container
         options[:data]['fp-option-services']          = Array(services).join(",") if services
