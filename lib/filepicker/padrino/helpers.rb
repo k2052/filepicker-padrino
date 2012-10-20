@@ -2,7 +2,7 @@ module Filepicker
   module Padrino
     module Helpers
       def filepicker_form_for(record, path, options = {}, &block)
-        options[:builder] = FormBuilder
+        options[:builder] = ::Filepicker::Padrino::FormBuilder
         form_for(record, path, options) do |f|
           capture(f, &block)
         end
