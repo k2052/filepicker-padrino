@@ -1,7 +1,7 @@
 module Filepicker
   module Padrino
     class FormBuilder < ::Padrino::Helpers::FormBuilder::StandardFormBuilder
-      def filepicker_field(method, options = {})
+      def filepicker_field(name, options = {})
         input_options = {
           'data-fp-apikey'           => @template.settings.filepicker_padrino_api_key,
           'data-fp-button-text'      => options.fetch(:button_text, "Pick File"),
@@ -13,7 +13,7 @@ module Filepicker
         }
 
         type = options[:dragdrop] ? 'filepicker-dragdrop' : 'filepicker'
-        @template.text_field_tag type, input_options
+        @template.input_tag type, input_options.reverse_merge!(:name => name)
       end
     end
   end
