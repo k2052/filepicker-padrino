@@ -13,7 +13,7 @@ module Filepicker
         }
 
         type = options[:dragdrop] ? 'filepicker-dragdrop' : 'filepicker'
-        @template.text_field_tag type, options
+        @template.text_field_tag type, input_options
       end
     end
   end
