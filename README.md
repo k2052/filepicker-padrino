@@ -9,7 +9,7 @@ Very little code was changed so if you'd like to thank someone then thank him!
 
 Add this line to your application's Gemfile:
 
-    gem 'filepicker-padirno'
+    gem 'filepicker-padrino'
 
 And then execute:
 
