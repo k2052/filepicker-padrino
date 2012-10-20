@@ -35,7 +35,7 @@ Add the filepicker.io javascript library to your layout:
 
 ### Adding an upload field to your form:
 
-    <%= filepicker_form_for @user do |f| %>
+    <%= filepicker_form_for @user, path do |f| %>
       <div>
         <%= f.label :avatar_url, "Upload Your Avatar:" %>
         <%= f.filepicker_field :avatar_url %> <!-- User#avatar_url is a regular string column -->
