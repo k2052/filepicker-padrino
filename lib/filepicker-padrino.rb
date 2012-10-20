@@ -1,10 +1,10 @@
-require "filepicker/padrino/version"
-require "filepicker/padrino/helpers"
+require 'filepicker/padrino/version'
+require 'filepicker/padrino/helpers'
 
 module Filepicker
   module Padrino
-    autoload :FormBuilder
-    
+    autoload :FormBuilder, 'filepicker/padrino/form_builder'
+
     def self.registered(app)
       app.helpers Helpers
     end
