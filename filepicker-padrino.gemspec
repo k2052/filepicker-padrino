@@ -15,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.version       = Filepicker::Padrino::VERSION
 
   gem.required_rubygems_version = ">= 1.3.6"
-  gem.add_dependency "padrino"
+  gem.add_dependency "padrino-helpers", "~> 0.10.6"
 end
