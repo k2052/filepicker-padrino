@@ -12,8 +12,9 @@ module Filepicker
         fields_for(record, instance_or_collection, &block)
       end
 
-      def filepicker_js_include_tag
-        javascript_include_tag "//api.filepicker.io/v0/filepicker.js"
+      def filepicker_js_include_tag(options = {})
+        options[:version] ||= 'v1'
+        javascript_include_tag "//api.filepicker.io/#{options[:version]}/filepicker.js"
       end
 
       def filepicker_save_button(text, url, mimetype, options = {})
