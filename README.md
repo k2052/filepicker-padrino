@@ -76,3 +76,10 @@ Full options list:
 of an iframe on the page.
 * services - What services your users can upload to. Ex: "BOX, COMPUTER, FACEBOOK".
 * save_as_name - A recommended file name. The user can override this.
+
+
+## Support
+
+If you found this repo useful please consider supporting me on [Gittip](https://www.gittip.com/k2052) or sending me some
+bitcoin `1csGsaDCFLRPPqugYjX93PEzaStuqXVMu`
+
